@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <div>
+    <form action="" id="data-form">
+        <h2>Fill FORM<hr/></h2><br/><br/><br/>
+        First Name<br><input type="text" id="fn"/><br/><br/>
+        LastName<br/><input type="text" id="sn"/><br/><br/>
+        Email<br/><input type="email" id="em"/><br/><br/>
+        Password<br/><input type="password"  id="pas"/><br><br>
+        Gender<br><input type="radio" value="male" id="ml" />Male
+                  <input type="radio" value="female" id="fl"/>female<br/><br/>
+        <button type="button" onclick="submiting()">submit</button>
+       
+    </form>
+   </div> 
+   <script>
+    
+
+      
+      function submiting(){
+
+        const fn=document.getElementById("fn").value;
+      const sn=document.getElementById("sn").value;
+      const em=document.getElementById("em").value;
+      const pas=document.getElementById("pas").value;
+      const male=document.getElementById("ml").checked;
+      const female=document.getElementById("fl").checked;
+      
+        if( fn ==="" || sn ==="" || em === "" || pas ==="" || !(male || female)){
+            alert("please fill data")}else{
+                alert("data is submited");
+            }
+        
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Curriculum Vitae</title>
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+    .img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease;
+    }
+    .img:hover {
+      transform: scale(1.1);
+    }
+    .dd {
+      width: 50%;
+      height: 30px;
+      border-radius: 5px;
+      background-color: grey;
+      margin-left: 150px;
+    }
+    body {
+      background-color: silver;
+    }
+    table {
+      width: 50%;
+      height: auto;
+      margin-left: 150px;
+    }
+    .add {
+      background-color: grey;
+      width: 25px;
+    }
+    .all {
+      display: flex;
+      margin-top: 15px;
+    }
+    hr {
+      width: 250px;
+      border: 1px solid black;
+    }
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    .button:hover {
+      background-color: #3e8e41;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .skill-label:hover,
+    .language-label:hover,
+    .contact-label:hover {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="all">
+    <table>
+      <tr>
+        <td bgcolor="gray">
+          <img src="me.JPEG" class="img" width="180px" height="140px">
+          <h3>PERSONAL INFO</h3>
+          <hr><br>
+          <label>Date Of Birth:</label><br>
+          <label>Marital Status:</label><br>
+          <label>Sex: Male</label><br>
+          <label>Nationality: RWANDAN</label><br><br>
+
+          <h3>CONTACT</h3>
+          <hr><br>
+          <label class="contact-label">Phone: 0785362362 / 072663748</label><br>
+          <label class="contact-label">Email: patrickrukundo180@hmail.com</label><br>
+          <label class="contact-label">Instagram: Patri_ck_180</label><br><br>
+
+          <h3><u>Skills</u></h3>
+          <hr><br>
+          <label class="skill-label">. Computer Skills</label><br>
+          <label class="skill-label">. Language Skills</label><br>
+          <label class="skill-label">. Team Management Skills</label><br>
+          <label class="skill-label">. Public Speaking</label>
+        </td>
+        <td>
+          <h2>PATRICK Rukundo</h2><br>
+          <label>Student At Tumba College</label>
+          <br><br><br><br><br><br>
+
+          <h3>LANGUAGES</h3>
+          <hr>
+          <label class="language-label">. English</label><br>
+          <label class="language-label">. Kinyarwanda</label><br>
+          <label class="language-label">. French</label><br>
+          <label class="language-label">. Kiswahili</label><br><br><br><br><br>
+
+          <h3>WORK EXPERIENCE</h3>
+          <hr>
+          <label>UCL Competition</label><br>
+          <label>Worked on a big project</label><br>
+          <label>Class Leader</label><br>
+          <label>National Exam</label><br><br>
+
+          <h3>REFERENCES</h3>
+          <hr>
+          <table border="1">
+            <tr>
+              <td>Principal of my<br>High School</td>
+              <td>HAKIZIMANA Vitae</td>
+            </tr>
+            <tr>
+              <td>Siblings</td>
+              <td>My Brother<br>My Sister</td>
+            </tr>
+            <tr>
+              <td>Classmates</td>
+              <td>Guy<br>Girl</td>
+            </tr>
+          </table>
+
+          <button class="button" onclick="displayMessage()">Click Me</button>
+        </td>
+      </tr>
+    </table>
+    <div class="add"></div>
+  </div>
+  <div class="dd"></div>
+
+  <script type="text/javascript">
+    function displayMessage() {
+      alert("Thank you for visiting my CV!");
+    }
+  </script>
+</body>
+</html>
